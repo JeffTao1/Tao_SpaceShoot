@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    public float moveSpeed = 2;
+    public float moveSpeed = 0.01f;
     public float arrivalDistance = 1;
     public float maxFloatDistance =10;
     Vector3 whereTheirRandom;
@@ -17,10 +17,12 @@ public class Asteroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         AsteroidMovement();
     }
     public void AsteroidMovement()
     {
+        //transform.position += whereTheirRandom * moveSpeed*Time.deltaTime;
         whereTheirRandom = transform.position + new Vector3( Random.Range(maxFloatDistance, -maxFloatDistance), Random.Range(-maxFloatDistance, -maxFloatDistance), 0);
         transform.rotation = Random.rotation;
     }
