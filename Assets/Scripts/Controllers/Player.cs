@@ -126,4 +126,9 @@ public class Player : MonoBehaviour
 
     }
 
+    public void EnemyRadar(float radius, int circlePoint)
+    {
+    
+    }
+
 }
