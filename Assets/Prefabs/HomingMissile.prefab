@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27cd768722affa44499ff11fc3c13f31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  EnemyShootPoint: {fileID: 1409900303673908, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+  speed: 20
+  EnemyShootPoint: {fileID: 0}
 --- !u!1 &1819074805867038
 GameObject:
   m_ObjectHideFlags: 0

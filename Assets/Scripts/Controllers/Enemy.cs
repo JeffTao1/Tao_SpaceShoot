@@ -75,6 +75,9 @@ public class Enemy : MonoBehaviour
 
             GameObject howMuchBomb = Instantiate(theBomb , shootPoint.transform.position , transform.rotation);
             Destroy(howMuchBomb, lifeTime);
+
+            ShootBomb sb = howMuchBomb.GetComponent<ShootBomb>();
+            sb.EnemyShootPoint = shootPoint;
         }
 
 

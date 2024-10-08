@@ -7,6 +7,7 @@ public class ShootBomb : MonoBehaviour
 {
     public float speed;
     public GameObject EnemyShootPoint;
+    float timeRotate = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,16 +18,18 @@ public class ShootBomb : MonoBehaviour
     void Update()
     {
 
-        transform.position = new Vector3(0,EnemyShootPoint.transform.position.y  +  speed * Time.deltaTime,0);
+        Vector3 newPosition = transform.position += transform.up * speed * Time.deltaTime; //new Vector3(0,EnemyShootPoint.transform.position.y  +  speed * Time.deltaTime,0);
+        
         if (Input.GetKey(KeyCode.Q))
         {
-            transform.rotation = Quaternion.Euler(0, 0, 45);
-
+            //transform.rotation = Quaternion.Euler(0, 0, 45);
+           
+             transform.Rotate(0, 0, 0.5f + timeRotate*Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.E))
         {
-            transform.rotation = Quaternion.Euler(0, 0, -45);
-
+            //transform.rotation = Quaternion.Euler(0, 0, -45);
+            transform.Rotate(0, 0, -0.5f + timeRotate * Time.deltaTime);
         }
     }
 }
