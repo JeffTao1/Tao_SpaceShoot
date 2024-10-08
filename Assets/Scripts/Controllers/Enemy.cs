@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
-    public GameObject theBomb; 
+    public GameObject theBomb;
+    public GameObject shootPoint;
     float speed = 10f;
     int MaxBomb;
     float lifeTime = 3f;
@@ -62,14 +63,19 @@ public class Enemy : MonoBehaviour
         }
 
 
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+
+        //    GameObject howMuchBomb =  Instantiate(theBomb, transform.position,transform.rotation);
+        //    Destroy(howMuchBomb,lifeTime);
+        //}
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
-            GameObject howMuchBomb =  Instantiate(theBomb, transform.position,transform.rotation);
-            Destroy(howMuchBomb,lifeTime);
+            GameObject howMuchBomb = Instantiate(theBomb , shootPoint.transform.position , transform.rotation);
+            Destroy(howMuchBomb, lifeTime);
         }
-
-
 
 
 
