@@ -5,32 +5,33 @@ public class Enemy : MonoBehaviour
 {
     public GameObject theBomb;
     public GameObject shootPoint;
+    public GameObject wheretheEnemyat;
     float speed = 10f;
     int MaxBomb;
     float lifeTime = 3f;
     private void Update()
     {
 
-
-        if (Input.GetKey(KeyCode.W))
+        wheretheEnemyat.transform.position = transform.position;
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(0, 0, 180);
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y);
             transform.rotation = Quaternion.Euler(0, 0, 90);
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
 
             transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y);
@@ -38,39 +39,33 @@ public class Enemy : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow))
         {
             
             transform.rotation = Quaternion.Euler(0, 0, 45);
         }
 
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow))
         {
            
             transform.rotation = Quaternion.Euler(0, 0, -45);
         }
 
-        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow))
         {
 
             transform.rotation = Quaternion.Euler(0, 0, 135);
         }
 
-        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow))
         {
 
             transform.rotation = Quaternion.Euler(0, 0, -135);
         }
 
 
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
 
-        //    GameObject howMuchBomb =  Instantiate(theBomb, transform.position,transform.rotation);
-        //    Destroy(howMuchBomb,lifeTime);
-        //}
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Mouse2))
         {
 
             GameObject howMuchBomb = Instantiate(theBomb , shootPoint.transform.position , transform.rotation);

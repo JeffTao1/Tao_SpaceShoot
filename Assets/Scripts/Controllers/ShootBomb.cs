@@ -20,16 +20,19 @@ public class ShootBomb : MonoBehaviour
 
         Vector3 newPosition = transform.position += transform.up * speed * Time.deltaTime; //new Vector3(0,EnemyShootPoint.transform.position.y  +  speed * Time.deltaTime,0);
         
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             //transform.rotation = Quaternion.Euler(0, 0, 45);
            
-             transform.Rotate(0, 0, 0.5f + timeRotate*Time.deltaTime);
+             transform.Rotate(0, 0, 1f + timeRotate*Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.Mouse1))
         {
             //transform.rotation = Quaternion.Euler(0, 0, -45);
-            transform.Rotate(0, 0, -0.5f + timeRotate * Time.deltaTime);
+            transform.Rotate(0, 0, -1f + timeRotate * Time.deltaTime);
         }
     }
+
+
+    
 }

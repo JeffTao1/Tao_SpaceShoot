@@ -836,6 +836,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4194190890010494449, guid: 462add3d0f7c62a4682e9c053b00ec93, type: 3}
   m_PrefabInstance: {fileID: 73178459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &555154905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 804814442614448854, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+  m_PrefabInstance: {fileID: 2030902519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &567868623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1409900303673908, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+  m_PrefabInstance: {fileID: 925799359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &604982759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4194190890010494449, guid: 462add3d0f7c62a4682e9c053b00ec93, type: 3}
@@ -1480,6 +1490,10 @@ PrefabInstance:
       propertyPath: shootPoint
       value: 
       objectReference: {fileID: 1546051094}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: wheretheEnemyat
+      value: 
+      objectReference: {fileID: 567868623}
     - target: {fileID: 2922312208869967711, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1
@@ -3371,6 +3385,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 603581918025136509, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: Bomb
+      value: 
+      objectReference: {fileID: 1273894435109820, guid: b262926197932c945b68169dd6fd6c5c, type: 3}
+    - target: {fileID: 603581918025136509, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: SDBomb
+      value: 
+      objectReference: {fileID: 1567431237259788, guid: 03444c0c59102ba46bb1a8b5a1b0a810, type: 3}
+    - target: {fileID: 603581918025136509, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: staytime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 603581918025136509, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: enemywhere
+      value: 
+      objectReference: {fileID: 567868623}
+    - target: {fileID: 603581918025136509, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: whereshoot
+      value: 
+      objectReference: {fileID: 555154905}
+    - target: {fileID: 603581918025136509, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: howMuchBomb
+      value: 
+      objectReference: {fileID: 555154905}
+    - target: {fileID: 603581918025136509, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: pentagonbomb
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043645560882187033, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.567
+      objectReference: {fileID: 0}
     - target: {fileID: 6890330259706833056, guid: abc125f00ae369940b2c5c0275186637, type: 3}
       propertyPath: powerUp
       value: 
@@ -3519,6 +3565,30 @@ PrefabInstance:
       propertyPath: asteroidTransforms.Array.data[19]
       value: 
       objectReference: {fileID: 503729236}
+    - target: {fileID: 8412233006045116618, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.49474904
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412233006045116618, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.49474904
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412233006045116618, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412233006045116618, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: m_Parameters.colorGradient.m_ColorSpace
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412233006045116618, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412233006045116618, guid: abc125f00ae369940b2c5c0275186637, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.54166603
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
