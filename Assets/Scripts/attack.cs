@@ -11,7 +11,7 @@ public class attack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             gameObject.tag = "y";
         }
@@ -19,7 +19,7 @@ public class attack : MonoBehaviour
         {
             gameObject.tag = "Player";
         }
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButtonDown(1))
         {
             gameObject.tag = "r";
         }

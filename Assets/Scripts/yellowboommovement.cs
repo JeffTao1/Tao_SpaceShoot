@@ -19,7 +19,7 @@ public class yellowboommovement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.gameObject.CompareTag("y"))
+        if (collision.gameObject.tag =="y")
         {
             //Destroy(gameObject);
             // GameObject totalbomb = Instantiate(gameObject, transform.position, Quaternion.identity);
@@ -33,17 +33,17 @@ public class yellowboommovement : MonoBehaviour
 
             
         }
-        else if ((!collision.gameObject.CompareTag("Player") || !collision.gameObject.CompareTag("r")))
+        else
         {
             Destroy(collision.gameObject);
         }
+       // else if ((!collision.gameObject.CompareTag("Player") || !collision.gameObject.CompareTag("r")))
+       // {
+            
+       // }
        
     }
 
     
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Destroy(gameObject);
-        Destroy(collision.gameObject);
-    }
+    
 }

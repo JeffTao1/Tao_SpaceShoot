@@ -24,6 +24,22 @@ public class playerjeff : MonoBehaviour
        transform.Translate(gowherex * speed * Time.deltaTime, 0, 0);
        transform.Translate(0, gowherey * speed * Time.deltaTime, 0);
        
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            gameObject.tag = "y";
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            gameObject.tag = "Player";
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            gameObject.tag = "r";
+        }
+        else if (Input.GetMouseButtonUp(1))
+        {
+            gameObject.tag = "Player";
+        }
+
     }
 }
