@@ -19,7 +19,7 @@ public class yellowboommovement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag =="y")
+        if (collision.gameObject.tag =="y" )
         {
             //Destroy(gameObject);
             // GameObject totalbomb = Instantiate(gameObject, transform.position, Quaternion.identity);
@@ -32,6 +32,10 @@ public class yellowboommovement : MonoBehaviour
              
 
             
+        }
+        else if ( collision.gameObject.tag == "wall")
+        {
+            Destroy(gameObject);
         }
         else
         {

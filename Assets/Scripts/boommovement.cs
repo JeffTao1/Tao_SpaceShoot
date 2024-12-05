@@ -17,7 +17,7 @@ public class boommovement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "r")
+        if (collision.gameObject.tag == "r"|| collision.gameObject.tag == "wall")
         {
             //Destroy(gameObject);
             // GameObject totalbomb = Instantiate(gameObject, transform.position, Quaternion.identity);

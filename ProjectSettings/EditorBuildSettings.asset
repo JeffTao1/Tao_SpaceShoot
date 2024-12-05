@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/JeffTaoteam.unity
     guid: 178d840f8c14c264eab435c650b658ea
+  - enabled: 1
+    path: Assets/Scenes/JeffTaoteamlevel2.unity
+    guid: 95671f8199c8ec34ab80ca7bd34136b3
   m_configObjects: {}

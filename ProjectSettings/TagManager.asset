@@ -6,6 +6,8 @@ TagManager:
   tags:
   - y
   - r
+  - wall
+  - boss
   layers:
   - Default
   - TransparentFX

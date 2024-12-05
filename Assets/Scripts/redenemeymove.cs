@@ -26,6 +26,6 @@ public class redenemeymove : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
-        Destroy(collision.gameObject);
+      
     }
 }
